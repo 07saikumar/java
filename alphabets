@@ -1,0 +1,33 @@
+package thrteenfeb;
+import java.util.*;
+
+public class seventeenth_feb {
+
+	public static void main(String[] args) {
+		  int n;
+		  int res, rem,quo;
+//		  char ch='A', chr='A',letter;
+		  int ch=64;
+		  Scanner sc = new Scanner(System.in);
+		  System.out.println("enter positive a number");
+		  n = sc.nextInt();
+		  if(n<=26)
+		  {
+			  System.out.println((char)(ch+n));
+		  }
+		  else if(n>26)
+		  {
+			  res=n%26;
+
+			  quo=n/26;
+//			 System.out.println(res+" "+quo);
+			 System.out.print((char)(ch+quo));
+			 System.out.print((char)(ch+res));
+			
+		  }
+		  
+		  
+
+	}
+
+}
