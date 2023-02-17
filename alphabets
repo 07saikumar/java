@@ -15,7 +15,7 @@ public class seventeenth_feb {
 		  {
 			  System.out.println((char)(ch+n));
 		  }
-		  else if(n>26)
+		  else if(n>26&&n%26!=0)
 		  {
 			  res=n%26;
 
@@ -25,7 +25,10 @@ public class seventeenth_feb {
 			 System.out.print((char)(ch+res));
 			
 		  }
-		  
+		  else if(n>26&&n%26==0)
+		  {
+			  
+		  }
 		  
 
 	}
