@@ -27,6 +27,11 @@ public class seventeenth_feb {
 		  }
 		  else if(n>26&&n%26==0)
 		  {
+			  rem=n/26;
+			  quo=(rem%26)+1;
+			  System.out.println("the quotient is "+quo);
+			  for(int i=0;i<quo;i++)
+				  System.out.print("Z");
 			  
 		  }
 		  
