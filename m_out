@@ -1,0 +1,21 @@
+package thrteenfeb;
+import java.util.*;
+public class method_out_class 
+{
+	
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter your name: ");
+		String name = sc.nextLine();
+		display(name);
+
+		
+	}
+	static void display(String k)
+	{
+		System.out.println("hello "+k+" welcome to Gitam");
+	}
+
+}
+ 
