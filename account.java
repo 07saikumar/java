@@ -35,38 +35,41 @@ public class Account {
 	{
 		Account a = new Account();
 		Scanner sc = new Scanner(System.in);	// create deposit withdraw current
-		while(true) {			
-		System.out.println("1.create 2.deposit 3.withdraw 4.current 5.exit");
-		int ch = sc.nextInt();
-		switch(ch)
-		{
-		case 1 :a.create();
-				while(true)
-				{
-					System.out.println("2.deposit 4.current 5.exit");
-					int k = sc.nextInt();		// 2 4 5
-					switch(k)
+		outer:
+			while(true)
+			{			
+				System.out.println("1.create 2.deposit 3.withdraw 4.current 5.exit");
+				int ch = sc.nextInt();
+			switch(ch)
+			{
+			case 1 :a.create();
+					while(true)
 					{
-					case 2: a.deposit();
-					break;
-					case 4: a.current();
-					break;
-					case 5: break;
-					}		
-				}
+						System.out.println("1.deposit 2.current 3.home");
+						int k = sc.nextInt();		// 2 4 5
+						switch(k)
+						{
+						case 1: a.deposit();
+						break;
+						case 2: a.current();
+						break;
+						case 3: continue outer;
+						}		
+					}
+					
+	//			break;
+	
+			case 2: a.deposit();
+			break;
+			case 3 : a.withdraw();
+			break;
+			case 4: a.current();
+			break;
+			case 5 : System.exit(0);
 			
-
-		case 2: a.deposit();
-		break;
-		case 3 : a.withdraw();
-		break;
-		case 4: a.current();
-		break;
-		case 5 : System.exit(0);
-		
-		}
-		System.out.println("\n");
-		}
+			}
+			System.out.println("\n");
+			}
 		
 
 	}
